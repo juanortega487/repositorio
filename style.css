@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: aparecer 1s ease-out;
+}
+
+h1 {
+  color: #ff416c;
+  margin-bottom: 1rem;
+  animation: cambioColor 3s infinite alternate;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ff416c;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff4b2b;
+  transform: scale(1.05);
+}
+
+.resultado {
+  margin-top: 1rem;
+}
+
+.resultado a {
+  display: block;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.resultado a:hover {
+  background-color: #ff416c;
+  color: #fff;
+}
+
+
+@keyframes aparecer {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes cambioColor {
+  0% { color: #ff416c; }
+  50% { color: #ffb347; }
+  100% { color: #ff416c; }
+}
